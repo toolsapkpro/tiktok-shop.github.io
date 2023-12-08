@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from allappsreveiws.com.ng/sportybetx/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Sep 2023 22:22:16 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,900&amp;display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: rgb(214, 211, 211);
+        }
+
+        .pics {
+            width: 92%;
+            height: fit-content;
+            background: rgb(255, 255, 255);
+            margin: 0 auto;
+            margin-top: 40px;
+            border-radius: 13px;
+            overflow: hidden;
+            position: relative;
+            /* border: 1px solid blue; */
+        }
+
+        .pics-container {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            flex: 0 0 33.33%;
+        }
+
+        .pics img {
+            width: 92%;
+            height: 290px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 20px;
+        }
+
+        .pics h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .pics p {
+            padding-left: 10px;
+        }
+
+        .next {
+            width: 50%;
+            height: 70px;
+            margin: 0 auto;
+            /* background-color: rgb(255, 255, 255); */
+        }
+
+        .next button {
+            width: 200px;
+            height: 100px;
+            margin: 0 auto;
+            display: block;
+            font-size: larger;
+            clip-path: circle();
+            background: blue;
+            color: white;
+        }
+        @media only screen and (max-width: 380px){
+            .pics {
+            width: 96%;
+            height: 440px;
+            background: rgb(255, 255, 255);
+            margin: 0 auto;
+            margin-top: 40px;
+            border-radius: 13px;
+            overflow: hidden;
+            position: relative;
+            /* border: 1px solid blue; */
+        }
+
+        .pics-container {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            flex: 0 0 33.33%;
+        }
+
+        .pics img {
+            width: 95%;
+            height: 200px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 20px;
+        }
+
+        .pics h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .pics p {
+            padding-left: 10px;
+        }
+
+        .next {
+            width: 50%;
+            height: 70px;
+            margin: 0 auto;
+            /* background-color: rgb(255, 255, 255); */
+        }
+
+        .next button {
+            width: 140px;
+            height: 70px;
+            margin: 0 auto;
+            display: block;
+            font-size: larger;
+            clip-path: circle();
+            background: blue;
+            color: white;
+        }
+        }
+
+        body{
+  background-color: black;
+}
+    </style>
+</head>
+
+<body>
+    <div class="pics">
+        <div class="pics-container">
+            <div class="slide"> <br>
+                <img src="img/cashout.jpg" alt=""> <br>
+                <h2>Never miss a day without cash out</h2> <br>
+                <p>Make money straight to your TikTok account using our application it easy and very secure </p> <br> <br>
+            </div>
+
+            <div class="slide"> <br>
+                <img src="img/secure.jfif" alt=""> <br>
+                <h2> We have got advance securuty</h2> <br>
+                <p>Our advance security features ensure that every transaction you made is safe and secure.
+                </p> <br>
+            </div>
+
+            <div class="slide"> <br>
+                <img src="img/warn.jpg" alt=""> <br>
+                <h2>Warning!</h2> <br>
+                <p>This application requires a transition fee that needs to be made in other to add coin to your TikTok.</p> <br>
+            </div>
+        </div>
+    </div>
+    <br> <br> <br>
+    <div class="next"> <br>
+        <button onclick="nextSlide()">Next -></button>
+    </div>
+
+    <script>
+        const picsContainer = document.querySelector('.pics-container');
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function nextSlide() {
+            if (currentSlide === slides.length - 1) {
+                // Redirect to a new page when the last slide is reached
+                window.location.href = 'home.html'; // Replace 'https://example.com/next-page' with the actual URL of the next page
+            } else {
+                currentSlide = (currentSlide + 1) % slides.length;
+                picsContainer.style.transform = `translateX(-${currentSlide * 33.33}%)`;
+            }
+        }
+    </script>
+</body>
+
+
+<!-- Mirrored from allappsreveiws.com.ng/sportybetx/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Sep 2023 22:22:18 GMT -->
+</html>
